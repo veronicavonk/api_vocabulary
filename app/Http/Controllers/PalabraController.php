@@ -11,7 +11,7 @@ use App\Progreso;
 class PalabraController extends Controller
 {
     public function index(){
-        $palabra = Palabra::all('palabra', 'palabra_tipo');
+        $palabra = Palabra::all('palabra', 'tipo');
         return response()->json(['msg'=>'Signup Successfully', 'response'=>$palabra],201);
     }
 
